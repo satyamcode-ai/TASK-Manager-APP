@@ -16,7 +16,7 @@ export const AuthProvider = ({ children }) => {
     }, []);
 
     const login = async (email, password) => {
-        const response = await axios.post('http://localhost:5000/api/users/login', {
+        const response = await axios.post('https://task-manager-app-hn3w.onrender/api/users/login', {
             email,
             password,
         });
@@ -28,7 +28,7 @@ export const AuthProvider = ({ children }) => {
     };
 
     const register = async (name, email, password) => {
-        const response = await axios.post('http://localhost:5000/api/users', {
+        const response = await axios.post('https://task-manager-app-hn3w.onrender.com/api/users', {
             name,
             email,
             password,
